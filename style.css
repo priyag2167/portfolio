@@ -345,68 +345,123 @@ box-shadow: 0 0 20px rgba(48 , 46 , 77 ,0.15);
 }
 
 /* Home */
-.homeinfo{   
+/* General container and layout styles */
+.homeinfo {
     flex: 0 0 60%;
     margin-top: 17vh;
     padding-left: 4vw;
-     color: var(--text-black-900);
-     max-width: 60%;
-    
+    color: var(--text-black-900);
+    max-width: 60%;
 }
-h3.hello{
+
+h3.hello {
     font-size: 28px;
     margin: 2vh 0;
 }
-h3.hello span{
-    font-family: 'clicker script' ,cursive;
+
+h3.hello span {
+    font-family: 'clicker script', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 }
-h3.myprofession{
+
+h3.myprofession {
     font-size: 30px;
     margin: 2vh 0;
 }
-.typing{
+
+.typing {
     color: var(--skin-color);
 }
-.homeinfo p{
+
+.homeinfo p {
     margin-bottom: 4.5vh;
     font-size: 20px;
     color: var(--text-black-700);
 }
-.home-img{
+
+.home-img {
     margin-top: 20vh;
     flex: 0 0 40%;
     max-width: 50%;
     text-align: center;
 }
-/* .home-img::before{
-    content: '';
-    position: absolute;
-    width: 5vw;
-    height: 5vh;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    top: 10vh;
-    left: 50vw;
-}
- .home-img::after{
-    content: '';
-    position: absolute;
-    width: 5vw;
-    height: 5vh;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    bottom: 1vh;
-    right: 3vw;
- } */
-.home-img img{
-     height: 40vh;
-     margin: auto;
+
+.home-img img {
+    height: 40vh;
+    margin: auto;
     width: 20vw;
     border-radius: 5%;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .homeinfo {
+        margin-top: 10vh;
+        padding-left: 2vw;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .homeinfo h3.hello,
+    .homeinfo h3.myprofession {
+        font-size: 24px;
+    }
+
+    .homeinfo p {
+        font-size: 18px;
+    }
+
+    .home-img {
+        margin-top: 5vh;
+        max-width: 100%;
+    }
+
+    .home-img img {
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .homeinfo {
+        margin-top: 5vh;
+        padding: 0;
+        text-align: center;
+    }
+
+    .homeinfo p {
+        margin-bottom: 2vh;
+        font-size: 16px;
+    }
+
+    .home-img img {
+        width: 50vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeinfo h3.hello,
+    .homeinfo h3.myprofession {
+        font-size: 20px;
+    }
+
+    .homeinfo p {
+        font-size: 14px;
+    }
+
+    .home-img img {
+        width: 70vw;
+        height: auto;
+    }
+}
+
 /*About*/
 .about .about-content{
     flex: 0 0 100%;
