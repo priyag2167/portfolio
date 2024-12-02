@@ -376,9 +376,9 @@ h3.myprofession{
     color: var(--text-black-700);
 }
 .home-img{
-    margin-top: 15vh;
+    margin-top: 20vh;
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 50%;
     text-align: center;
 }
 /* .home-img::before{
@@ -633,10 +633,31 @@ h3.myprofession{
     overflow: hidden;
     cursor: pointer;
  }
- .portfolio .portfolio-item-inner .portfolio-img img{
+ .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
- }
+    padding-bottom: 30px; /* Add bottom padding to create space for the text */
+}
+ .portfolio-img {
+    position: relative;
+    display: inline-block;
+}
+
+.app-name {
+    position: absolute;
+    bottom: 1px; /* Adjust bottom spacing as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-black-700);
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 1px 1px; /* Add padding for the text */
+    border-radius: 5px; /* Optional: Adds rounded corners to the background */
+}
+
+
  /* CONTACT*/
  .contact-title{
     color: var(--skin-color);
